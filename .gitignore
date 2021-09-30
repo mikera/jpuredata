@@ -12,3 +12,5 @@ buildNumber.properties
 /.project
 /.settings/
 /.classpath
+/pdnative.dll
+/pthreadGC2.dll
