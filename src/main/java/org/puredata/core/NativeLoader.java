@@ -136,7 +136,7 @@ public class NativeLoader {
 			System.out.println("Trying to load library: "+path);
 			System.load(path);
 			fileOut.deleteOnExit();
-		} catch (IOException error) {
+		} catch (Throwable error) {
 			throw new NativeLibraryLoadError("Failed to save native library " + library + " to temporary file", error);
 		}
 	}
